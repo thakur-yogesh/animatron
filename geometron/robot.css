@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+ padding: 30px;
+}
+
+h1{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+	animation-name: moveInright;
+	animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveInright{
+	0%{
+		opacity: 1;
+		transform: translate(-20px,0);
+	}
+
+  25%{
+    opacity: 1;
+    transform: translate(20px,0);
+  }
+  50%{
+    opacity: 1
+    transform:translate(-20px,0);
+  }
+  75%{
+    opacity: 1;
+    transform: translate(20px,0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(-20px,0);
+  }
+}
+
+.main{
+  background-image:linear-gradient(to right ,rgba(47,118,249,0.7),rgba(95,199,201,0.6))
+  ,url("https://img4.goodfon.com/wallpaper/nbig/a/5e/3d-rendering-background-design-colorful-abstract-geometry--3.jpg");
+  font-family: 'Patrick Hand', cursive;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape{
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: dodgerblue;
+  width: 20vh;
+  height: 20vh;
+  transition: all 0.6s;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
+}
+
+.shape:hover{
+  border: 20px solid;
+  border-radius: 100px;
+  opacity: 0.5;
+}
