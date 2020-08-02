@@ -3,24 +3,26 @@ body{
   padding: 30px;
 }
 
-.back{
+.header{
   text-align: center;
   backface-visibility: hidden;
 }
 
-.back-btn{
+.header-btn{
+	color: #ffff;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   padding: 10px 15px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0);
   border-radius: 5px;
   backface-visibility: hidden;
   transition: all 0.3s;
+	box-shadow: 0 1px 5px rgba(0,0,0,1);
 }
-.back-btn:hover{
+.header-btn:hover{
   transform: scale(1.1);
-  opacity: 0.3;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
 .animation-box{
@@ -61,4 +63,5 @@ body{
   opacity: 0.3;
   transform: scale(1.1);
   transform: translate(-50%,0);
+	box-shadow: 0px 2px 10px rgb(0,0,0);
 }
